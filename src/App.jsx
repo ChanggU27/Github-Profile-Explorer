@@ -294,7 +294,7 @@ function App() {
               <FaGithub className="h-10 w-10" />
 
               <FieldLabel className="text-2xl font-bold">
-                Search GitHub Profile
+                Github Profile Explorer
               </FieldLabel>
             </div>
 
@@ -339,7 +339,7 @@ function App() {
       </main>
 
       <footer className="border-t pt-5 pb-5 text-center text-sm text-muted-foreground">
-        <p>GitHub User Search | Created by John</p>
+        <p>GitHub Profile Explorer • © 2026 John Jacob Villa</p>
 
         <div className="flex justify-center gap-6 mt-2">
           <a
@@ -353,7 +353,7 @@ function App() {
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/in/john-jacob-villa-334b69382/"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 hover:underline"
