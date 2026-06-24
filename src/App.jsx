@@ -304,7 +304,13 @@ function App() {
     setUserData(null);
     setRepos([]);
 
-    const response = await fetch(`https://api.github.com/users/${user}`);
+    const headers = {
+      Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
+    };
+
+    const response = await fetch(`https://api.github.com/users/${user}`, {
+      headers,
+    });
 
     if (!response.ok) {
       throw new Error(`Couldn't find a GitHub user named "${user}".`);
@@ -316,6 +322,7 @@ function App() {
 
     const reposResponse = await fetch(
       `${data.repos_url}?sort=updated&per_page=100`,
+      { headers },
     );
 
     const reposData = await reposResponse.json();
