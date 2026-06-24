@@ -9,6 +9,7 @@ A React application for searching GitHub users and exploring their repositories.
 - Search repositories
 - Sort repositories by stars or updates
 - Dark mode support
+- Mobile-responsive
 - Pagination
 
 ## Screenshots
